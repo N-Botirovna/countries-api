@@ -58,6 +58,7 @@ request.addEventListener('readystatechange', () => {
                     // select option part 
                     selectOpt.addEventListener("change", (e) => {
                         e.preventDefault();
+                        myValue = selectOpt.value;
                         if (selectOpt.value != "All countries") {
                             if (selectOpt.value != String(country.continents)) {
                                 childDiv.style.display = "none";
@@ -67,7 +68,8 @@ request.addEventListener('readystatechange', () => {
                             }
                         }
                         else {
-                            childDiv.style.display = "block"
+                            childDiv.style.display = "block";
+                            
                         }
                     }
                     )
@@ -82,7 +84,7 @@ request.addEventListener('readystatechange', () => {
                             if(!isVisible){
                                 childDiv.style.display = "none";
                             }
-                            else{
+                            else if(isVisible && myValue == String(country.continents) || isVisible && (myValue == "All countries")){
                                 childDiv.style.display = "block"
                             }
                     })
