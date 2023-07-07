@@ -12,6 +12,9 @@
     transform: scale(1.2) translate(2px, -5px);
     text-shadow: 0 0 5px rgb(216, 213, 213);
 }
+a{
+    transition: 1s ease;
+}
 .dark-mode {
     background-color: rgb(15, 25, 65);
 
@@ -59,6 +62,23 @@
             }
         }
     }
+}
+
+.single-dark-mode{
+    .infoDiv{
+        #title{
+            color: white !important;
+        }
+     .about .list-group li{
+        background:  rgb(15, 25, 65);
+        color: white;
+    }
+    .flexiable{
+        .bC{
+            color: white ;
+        }
+    }
+}
 }
 
 

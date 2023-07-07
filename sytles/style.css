@@ -16,6 +16,10 @@
   text-shadow: 0 0 5px rgb(216, 213, 213);
 }
 
+a {
+  transition: 1s ease;
+}
+
 .dark-mode {
   background-color: rgb(15, 25, 65);
 }
@@ -46,6 +50,17 @@
   color: white;
 }
 .dark-mode .container .myDiv > .childDiv p {
+  color: white;
+}
+
+.single-dark-mode .infoDiv #title {
+  color: white !important;
+}
+.single-dark-mode .infoDiv .about .list-group li {
+  background: rgb(15, 25, 65);
+  color: white;
+}
+.single-dark-mode .infoDiv .flexiable .bC {
   color: white;
 }
 
