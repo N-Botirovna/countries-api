@@ -1,0 +1,69 @@
+.img-fluid {
+    height: 110px !important;
+}
+.childDiv{
+    text-decoration: none;
+}
+.childDiv:hover{
+    transform: scale(1.02) translate(-8px, -8px);
+    border: 2px solid rgb(196, 194, 194);
+}
+.myBtn:hover{
+    transform: scale(1.2) translate(2px, -5px);
+    text-shadow: 0 0 5px rgb(216, 213, 213);
+}
+.dark-mode {
+    background-color: rgb(15, 25, 65);
+
+    .header {
+        background-color: rgb(15, 20, 90);
+        .container .row {
+            h2{
+                color: white !important;
+            }
+            .myBtn {
+                background-color: rgb(15, 20, 90) !important;
+                color: white;
+            }
+        }
+    }
+
+    .container {
+        nav {
+            &>div {
+                background-color: rgb(15, 25, 65);
+
+                form {
+                    input {
+                        background-color: rgb(15, 20, 90);
+                        color: white;
+                    }
+                }
+
+                .form-select {
+                    background-color: rgb(15, 20, 90);
+                    border: none;
+                    color: white;
+                }
+            }
+        }
+
+        .myDiv {
+            &> .childDiv {
+                background-color: rgb(15, 20, 90);
+                color: white;
+
+                p {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 576px) {
+    .d-flex.search-holder.row.w-100.justify-content-between{
+        flex-direction: column !important;
+    }
+}

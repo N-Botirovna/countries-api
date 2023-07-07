@@ -1,0 +1,6 @@
+@media screen and (max-width: 576px) {
+    .d-flex.search-holder.row.w-100.justify-content-between{
+        flex-direction: column !important;
+        gap: 12px;
+    }
+}
